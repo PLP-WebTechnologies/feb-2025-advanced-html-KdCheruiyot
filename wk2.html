@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced HTML5 Elements</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My HTML5 Demo</h1>
+    </header>
+    
+    <!-- Ordered List with Roman Numerals -->
+    <section>
+        <h2>Ordered List with Roman Numerals</h2>
+        <ol type="I">
+            <li>Introduction to HTML</li>
+            <li>Understanding CSS</li>
+            <li>Basics of JavaScript</li>
+            <li>Working with Forms</li>
+            <li>Multimedia Elements</li>
+        </ol>
+    </section>
+    
+    <!-- External Image -->
+    <section>
+        <h2>Beautiful Image from Pexels</h2>
+        <img src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg" alt="Beautiful Scenery" width="600">
+    </section>
+    
+    <!-- Contacts Table -->
+    <section>
+        <h2>Contact List</h2>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Mobile</th>
+                <th>Email</th>
+            </tr>
+            <tr>
+                <td>Dan Kiprotich</td>
+                <td>121 Litein</td>
+                <td>+254712504526</td>
+                <td>daniel@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Kip Dan</td>
+                <td>456 Nairobi</td>
+                <td>+254700773782</td>
+                <td>kipdan@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Petsy Chepkorir</td>
+                <td>78 Eldoret</td>
+                <td>+254723237889</td>
+                <td>petsyc@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Kossy Chella</td>
+                <td>32 Embu</td>
+                <td>+254723123453</td>
+                <td>kossychella@gmail.com</td>
+            </tr>
+            
+        </table>
+    </section>
+    
+    <!-- Registration Form -->
+    <section>
+        <h2>Registration Form</h2>
+        <form action="#" method="post">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            <br><br>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <br><br>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            <br><br>
+            
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+            <br><br>
+            
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="Male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label>
+            <br><br>
+            
+            <label for="country">Country:</label>
+            <select id="country" name="country" required>
+                <option value="">Select your country</option>
+                <option value="USA">USA</option>
+                <option value="UK">UK</option>
+                <option value="Canada">Canada</option>
+                <option value="Australia">Australia</option>
+            </select>
+            <br><br>
+            
+            <label>Interests:</label>
+            <input type="checkbox" id="coding" name="interests" value="Coding">
+            <label for="coding">Coding</label>
+            <input type="checkbox" id="music" name="interests" value="Music">
+            <label for="music">Music</label>
+            <input type="checkbox" id="sports" name="interests" value="Sports">
+            <label for="sports">Sports</label>
+            <br><br>
+            
+            <button type="submit">Register</button>
+        </form>
+    </section>
+</body>
+</html>
